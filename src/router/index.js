@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import index from '@/components/index'
 import ChapterOne from '@/components/ChapterOne'
 import ChapterTwo from '@/components/ChapterTwo'
+import ChapterThree from '@/components/ChapterThree'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/ch2',
       name: 'ChapterTwo',
       component: ChapterTwo
+    },
+    {
+      path: '/ch3',
+      name: 'ChapterThree',
+      component: ChapterThree
     }
 
   ]

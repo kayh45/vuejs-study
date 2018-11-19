@@ -13,6 +13,9 @@
       <router-link to="/ch2" class="header-menu">
         <p>Chapter 2</p>
       </router-link>
+      <router-link to="/ch3" class="header-menu">
+        <p>Chapter 3</p>
+      </router-link>
     </header>
     <div id="kayh-content">
       <router-view></router-view>
