@@ -26,12 +26,12 @@
       <hr />
 
       <h4>폼입력 바인딩</h4>
-      <div class="w3-container w3-border">
+      <div class="w3-container w3-border w3-padding">
         <input type="checkbox" id="checkbox" v-model="checked">
         <label for="checkbox">{{ checked }}</label>
       </div>
       <br>
-      <div class="w3-container w3-border">
+      <div class="w3-container w3-border w3-padding">
         <input type="checkbox" id="apple" value="apple" v-model="checkedNames">
         <label for="apple">사과</label>
         <input type="checkbox" id="banana" value="banana" v-model="checkedNames">
@@ -42,12 +42,13 @@
         <span>좋아하는 과일: {{ checkedNames }}</span>
       </div>
       <br>
-      <div class="w3-container w3-border">
+      <div class="w3-container w3-border w3-padding">
         <select v-model="selected">
           <option v-for="option in options" :value="option.value" :key="option.key">
             {{ option.text }}
           </option>
         </select>
+        &nbsp;
         <span>선택된 항목: {{ selected }}</span>
       </div>
       <hr />

@@ -4,6 +4,7 @@ import index from '@/components/index'
 import ChapterOne from '@/components/ChapterOne'
 import ChapterTwo from '@/components/ChapterTwo'
 import ChapterThree from '@/components/ChapterThree'
+import ChapterFour from '@/components/ChapterFour'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/ch3',
       name: 'ChapterThree',
       component: ChapterThree
+    },
+    {
+      path: '/ch4',
+      name: 'ChapterFour',
+      component: ChapterFour
     }
 
   ]

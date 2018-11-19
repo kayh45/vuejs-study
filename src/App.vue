@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <header id="kayh-header">
       <img id="header-logo" src="./assets/logo.png">
@@ -15,6 +16,9 @@
       </router-link>
       <router-link to="/ch3" class="header-menu">
         <p>Chapter 3</p>
+      </router-link>
+      <router-link to="/ch4" class="header-menu">
+        <p>Chapter 4</p>
       </router-link>
     </header>
     <div id="kayh-content">
