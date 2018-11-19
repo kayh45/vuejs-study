@@ -1,36 +1,22 @@
 <template>
   <div id="app">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <header id="kayh-header">
-      <img id="header-logo" src="./assets/logo.png">
-      <router-link to="/" class="header-menu">
-        <p>HOME</p>
-      </router-link>
-      <router-link to="/ch1" class="header-menu">
-        <p>Chapter 1</p>
-      </router-link>
-      <router-link to="/ch2" class="header-menu">
-        <p>Chapter 2</p>
-      </router-link>
-      <router-link to="/ch3" class="header-menu">
-        <p>Chapter 3</p>
-      </router-link>
-      <router-link to="/ch4" class="header-menu">
-        <p>Chapter 4</p>
-      </router-link>
-    </header>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <headerComponent />
     <div id="kayh-content">
-      <router-view></router-view>
+      <router-view />
     </div>
   </div>
 
 </template>
 
 <script>
+import header from '@/components/menu/header'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    'headerComponent': header
+  }
 }
 </script>
 
@@ -48,23 +34,6 @@ export default {
   background-color: #f1f1f1;
   color: #2c3e50;
   height: 100%;
-}
-
-header {
-  background-color: rgb(33, 13, 56);
-  height: 50px;
-  font-size: 20px;
-  color: white;
-}
-
-.header-menu {
-  display: inline-block;
-  padding-right: 10px;
-  margin: 10px 0;
-}
-
-#header-logo {
-  height: 30px;
 }
 
 #kayh-content {

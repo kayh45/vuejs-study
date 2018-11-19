@@ -18,7 +18,7 @@ export default {
   data () {
     return {
       message: 'Welcome to Your Vue.js App',
-      seen: true
+      seen: false
     }
   }
 }
