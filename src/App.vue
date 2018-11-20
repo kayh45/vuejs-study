@@ -3,18 +3,22 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <headerComponent />
-    <div id="kayh-content">
-      <router-view />
+    <div id="kayh-body">
+      <sidebar id="kayh-sidebar" />
+      <router-view id="kayh-content" />
     </div>
   </div>
 </template>
 
 <script>
 import header from '@/components/menu/header'
+import sidebar from '@/components/menu/sidebar'
+
 export default {
   name: 'App',
   components: {
-    'headerComponent': header
+    'headerComponent': header,
+    sidebar
   }
 }
 </script>
@@ -40,5 +44,7 @@ export default {
   background-color: white;
   padding: 10px;
   text-align: left;
+  min-height: 960px;
 }
+
 </style>

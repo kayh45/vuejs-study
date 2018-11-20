@@ -1,5 +1,5 @@
 <template>
-  <div class="w3-container">
+  <div>
     <h4>트랜지션 클래스</h4>
     <button class="w3-button w3-small w3-blue" @click="show = !show">Toggle</button>
     <transition name="fade">

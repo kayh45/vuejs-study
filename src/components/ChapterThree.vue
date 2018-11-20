@@ -1,6 +1,6 @@
 <template>
   <div id="ch3">
-    <div class="w3-container">
+    <div>
       <h4>이벤트 리스너</h4>
       <button @click="counter += 1" class="w3-button w3-red">Add 1</button>
       <p class="w3-margin-top">위 버튼을 클릭한 횟수는 {{ counter }} 번입니다.</p>

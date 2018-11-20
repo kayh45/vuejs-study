@@ -10,21 +10,6 @@
           </span>
         </div>
       </router-link>
-      <router-link to="/ch1" class="header-menu">
-        <p>Chapter 1</p>
-      </router-link>
-      <router-link to="/ch2" class="header-menu">
-        <p>Chapter 2</p>
-      </router-link>
-      <router-link to="/ch3" class="header-menu">
-        <p>Chapter 3</p>
-      </router-link>
-      <router-link to="/ch4" class="header-menu">
-        <p>Chapter 4</p>
-      </router-link>
-      <router-link to="/ch5" class="header-menu">
-        <p>Chapter 5</p>
-      </router-link>
     </div>
   </header>
 </template>
@@ -67,7 +52,6 @@ export default {
   #header-logo {
     height: inherit;
     float: left;
-    margin: 0 5%;
     padding: 10px;
   }
 
