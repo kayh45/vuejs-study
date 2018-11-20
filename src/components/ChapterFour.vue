@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h4>트랜지션 클래스</h4>
+    <h3>트랜지션 클래스</h3>
     <button class="w3-button w3-small w3-blue" @click="show = !show">Toggle</button>
     <transition name="fade">
       <p v-if="show">hello</p>
     </transition>
     <hr />
 
-    <h4>CSS 트랜지션</h4>
+    <h3>CSS 트랜지션</h3>
     <button class="w3-button w3-small w3-blue" @click="show2 = !show2">Toggle</button>
     <br>
     <div class="w3-gray w3-padding" style="width:400px">
@@ -19,14 +19,14 @@
     </div>
     <hr />
 
-    <h4>CSS 애니메이션</h4>
+    <h3>CSS 애니메이션</h3>
     <button class="w3-button w3-small w3-blue" @click="show3 = !show3">Toggle</button>
     <transition name="bounce">
       <p v-if="show3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis enim libero, at lacinia diam fermentum id. Pellentesque habitant morbi tristique senectus et netus.</p>
     </transition>
     <hr />
 
-    <h4>컴포넌트 트랜지션</h4>
+    <h3>컴포넌트 트랜지션</h3>
     <input type="radio" v-model="view" value="view-A" id="view-A">
     <label for="view-A">A</label> &nbsp;
     <input type="radio" v-model="view" value="view-B" id="view-B">

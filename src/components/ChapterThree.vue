@@ -1,21 +1,21 @@
 <template>
   <div id="ch3">
     <div>
-      <h4>이벤트 리스너</h4>
+      <h3>이벤트 리스너</h3>
       <button @click="counter += 1" class="w3-button w3-red">Add 1</button>
       <p class="w3-margin-top">위 버튼을 클릭한 횟수는 {{ counter }} 번입니다.</p>
       <hr />
 
-      <h4>메소드 이벤트 핸들러</h4>
+      <h3>메소드 이벤트 핸들러</h3>
       <button @click="greet" class="w3-button w3-blue">Greet</button>
       <hr />
 
-      <h4>인라인 메소드 핸들러</h4>
+      <h3>인라인 메소드 핸들러</h3>
       <button @click="say('hi')" class="w3-button w3-green">Say hi</button>
       <button @click="say('WHAT!!')" class="w3-button w3-green">Say what</button>
       <hr />
 
-      <h4>키 수식어</h4>
+      <h3>키 수식어</h3>
       <p class="w3-container w3-border-left w3-border-blue w3-margin-bottom">
         {{ keyMessage }}
       </p>
@@ -25,7 +25,7 @@
       <button @click.ctrl.exact="doSomething" class="w3-button w3-blue">ctrl키만 누르고 클릭해보세요</button>
       <hr />
 
-      <h4>폼입력 바인딩</h4>
+      <h3>폼입력 바인딩</h3>
       <div class="w3-container w3-border w3-padding">
         <input type="checkbox" id="checkbox" v-model="checked">
         <label for="checkbox">{{ checked }}</label>
@@ -53,7 +53,7 @@
       </div>
       <hr />
 
-      <h4>수식어</h4>
+      <h3>수식어</h3>
       <input class="w3-input" v-model.trim="autoTrim"><br>
       <p class="w3-container w3-border">{{autoTrim}}</p>
 

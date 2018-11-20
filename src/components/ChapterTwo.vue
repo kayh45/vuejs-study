@@ -1,20 +1,20 @@
 <template>
   <div id="ch2">
-    <h4>목록 가져오기</h4>
+    <h3>목록 가져오기</h3>
       <ul class="w3-ul w3-hoverable w3-border">
         <li v-for="item in items" :key="item.id">
           {{ item.message }}
         </li>
       </ul>
     <hr />
-    <h4>객체 가져오기</h4>
+    <h3>객체 가져오기</h3>
     <ul class="w3-ul w3-hoverable w3-border">
       <li v-for="(key, value) in object" :key="value.id">
           {{value}} : {{key}}
       </li>
     </ul>
     <hr />
-    <h4>Todo 리스트 만들기</h4>
+    <h3>Todo 리스트 만들기</h3>
     <ul class="w3-ul w3-border" id="ul-todo">
       <li is="todo-item" v-for="(todo, index) in todos" :key="todo.id"
           :title="todo.title" v-on:remove="todos.splice(index, 1)">

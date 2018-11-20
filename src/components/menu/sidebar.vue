@@ -1,7 +1,7 @@
 <template>
   <div>
     <span id="title">메뉴</span>
-    <ul>
+    <ul class="w3-ul w3-hoverable w3-large">
       <li v-for="chapter in chapters" :key="chapter.id">
         <router-link :to="chapter.route">
           <p>Chapter {{chapter.id}}</p>
@@ -32,9 +32,8 @@ export default {
   #kayh-sidebar {
     float: left;
     background-color: white;
-    padding: 20px;
     margin: 0 5%;
-    font-size: 18px;
+    border: 1px dotted rgb(39, 141, 155)
   }
 
   #kayh-sidebar a {
