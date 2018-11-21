@@ -25,16 +25,14 @@
 
     <h3>변이(mutation) 사용하기</h3>
     <div class="w3-row-padding">
-      <div class="w3-col m4">
+      <div class="w3-col m5">
         <input v-model.number="argX" class="w3-input w3-border" type="number">
       </div>
-      <div class="w3-col m2">
+      <div class="w3-col m5">
         <button @click="addX" class="w3-button w3-blue">Add x</button>
-      </div>
-      <div class="w3-col m3">
         <button @click="addXAction" class="w3-button w3-green">Slow Add x</button>
       </div>
-      <div class="w3-col m3">
+      <div class="w3-col m2">
         <p class="w3-large">결과: {{ count }}</p>
       </div>
     </div>
@@ -58,11 +56,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
-
 const Counter = {
   template: `<div>{{ count2 }}</div>`,
   computed: {

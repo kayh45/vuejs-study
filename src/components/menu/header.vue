@@ -40,6 +40,7 @@ export default {
     /* background-color: rgb(33, 13, 56); */
     height: 50px;
     font-size: 20px;
+    font-weight: bold;
     color: white;
   }
 

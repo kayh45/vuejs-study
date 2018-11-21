@@ -21,7 +21,8 @@ export default {
         {id: 2, route: '/ch2'},
         {id: 3, route: '/ch3'},
         {id: 4, route: '/ch4'},
-        {id: 5, route: '/ch5'}
+        {id: 5, route: '/ch5'},
+        {id: 6, route: '/ch6'}
       ]
     }
   }
